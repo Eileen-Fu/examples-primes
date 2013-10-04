@@ -16,13 +16,11 @@ public class PrintPrimes {
   }
 
 
-  public void calculatePrimes() {
+  private void calculatePrimes() {
+      
       int firstPrime = 2;
       listOfPrimes[1] = firstPrime;
-      calculateOddPrimes();
-  }
-
-  private void calculateOddPrimes() {
+      
       boolean JPRIME;
       int N;
       int MULT[] = new int[ORDMAX + 1];
@@ -31,7 +29,7 @@ public class PrintPrimes {
       int ORD = 2;
       int SQUARE = 9;
 
-      for(int primesFoundSoFar = 1; primesFoundSoFar <= numberOfPrimes; primesFoundSoFar++) {
+      for(int primesFoundSoFar = 2; primesFoundSoFar <= numberOfPrimes; primesFoundSoFar++) {
         do {
           J = J + 2;
           if (J == SQUARE) {
@@ -76,6 +74,7 @@ public class PrintPrimes {
       PrintPrimes printPrimes = new PrintPrimes(300, 50, 4, 10, 30);
       printPrimes.calculatePrimes();
       printPrimes.printPrimes();
+      }
 }
 
 					 
