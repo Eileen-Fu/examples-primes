@@ -1,3 +1,5 @@
+$ git tag -a v1.0 -m 'Assignment 2'
+
 public class PrintPrimes {
   int numberOfPrimes;
   int RR;
